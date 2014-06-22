@@ -1,0 +1,274 @@
+bioclite("limma")
+source("http://bioconductor.org/biocLite.R")
+?bioclite
+bioclite("limma")
+source("http://bioconductor.org/biocLite.R")
+?bioclite
+??bioclite
+biocLite("limma")
+bioclite("affy")
+biocLite("limma")
+biocLite(affy)
+biocLite("affy")
+library(affy)
+x<-(1,3,5)
+x<-c(1,3,5)
+y<-c(3,2,10)
+cbind(x,y)
+x<-list(2,"a","b", TRUE)
+x[[1]]
+x<-1:4
+y<-2:3
+x+y
+x<-c(17, 14, 4, 5, 13, 12, 10)
+y<-x[x>=10]<-4
+y
+y<-x[x==4]>10
+y
+y<-x[x>=11]<-4
+y
+y<-x[x<10]<-4
+y
+x
+x<-c(17, 14, 4, 5, 13, 12, 10)
+x[x>=10]<-4
+x
+x<-4L
+x
+class(x)
+x<-c(4,TRUE)
+x
+class(x)
+x<-list(2,"a","b", TRUE)
+x
+x[[1]]
+class(x[[1]])
+x<-c(1,3,5)
+y<-c(3,2,10)
+rbind(x,y)
+x<-1:4
+y<-2
+x+y
+x<-4
+class(x)
+x<-c(4,"a",TRUC)
+x<-c(4,"a",TRUE)
+class(x)
+x<-list(2,"a","b",TRUE)
+x[[1]]
+class(x[[1]])
+x<-c(3,5,1,10,12,6)
+x[x<=5]<-0
+x
+getmonitor <- function(id, directory, summary = FALSE){#
+	file<-	if(id< 10){#
+			paste(directory,"/","00",id,".csv",sep="")	#
+		} else if (x>9 && x<100){#
+			paste(directory,"/","0",id,".csv",sep="")	#
+		} else {#
+			paste(directory,"/",id,".csv",sep="")	#
+		}		#
+data <-read.csv(file)#
+if(summary){#
+	summary(data)#
+} else break
+getmonitor <- function(id, directory, summary = FALSE){#
+	file<-	if(id< 10){#
+			paste(directory,"/","00",id,".csv",sep="")	#
+		} else if (x>9 && x<100){#
+			paste(directory,"/","0",id,".csv",sep="")	#
+		} else {#
+			paste(directory,"/",id,".csv",sep="")	#
+		}		#
+data <-read.csv(file)#
+if(summary){#
+	summary(data)#
+} else print(id)
+sto
+stop
+z<-5
+z
+print(z)
+escae
+escape
+getmonitor <- function(id, directory, summarize=FALSE){#
+	file<-	if(id< 10){#
+			paste(directory,"/","00",id,".csv",sep="")	#
+		} else if (x>9 && x<100){#
+			paste(directory,"/","0",id,".csv",sep="")	#
+		} else {#
+			paste(directory,"/",id,".csv",sep="")	#
+		}		#
+data <-read.csv(file)#
+if(summarize==TRUE){#
+	summary(data)#
+}
+getmonitor(101,"specdata")
+n<-1:4
+r<-lapply(n,rnorm)
+r
+x<-list(rnorm(100),runif(100),rpois(100,1))
+sapply(x,quantile,probs=c(0.25,0.75))
+x<-rnorm(100)
+hist(x)
+y<-rnorm(250)
+hist(y)
+dev.set()
+dev.set(x)
+dev.off
+dev.off()
+hist(x)
+hist(y)
+hist(x)
+graphics.off()
+plot(x,y)
+y<-rnorm(100)
+ply(x,y)
+plot(x,y)
+X<-rnorm(100)
+x<-rnorm
+y<-x+rnorm(100)
+x<-rnorm(100)
+y<-x+rnorm(100)
+par(las=1)
+plot(x,y)
+par(las=2)
+plot(x,y)
+par(las=1)
+plot(x,y)
+par(las=2)
+plot(x,y)
+x1<-rnorm(10)
+y1<-rnorm(10)
+points(x1,y1,col='red')
+plot(x,y)
+x1<-rnorm(10)
+y1<-rnorm(10)
+points(x1,y1,col='red')
+library(nlme)#
+library(lattice)#
+xyplot(weight ~ Time | Diet, BodyWeight)
+library(datasets)#
+data(airquality)
+qplot(Wind, Ozone, data = airquality, geom = "smooth")
+install.packages(ggplot2)
+intall.package(ggplot2)
+install.packages("ggplot2")
+qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))
+library(ggplot2)
+qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))
+airquality = transform(airquality, Month = factor(Month))#
+qplot(Wind, Ozone, data = airquality, facets = . ~ Month)
+qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))
+g <- ggplot(movies, aes(votes, rating))
+print(g)
+qplot(votes, rating, data = movies)
+qplot(votes, rating, data = movies) + stats_smooth("loess")
+qplot(votes, rating, data = movies, panel = panel.loess)
+qplot(votes, rating, data = movies, smooth = "loess")
+qplot(votes, rating, data = movies) + geom_smooth()
+NEI <- readRDS("summarySCC_PM25.rds")#
+SCC <- readRDS("Source_Classification_Code.rds")#
+result<-rowsum(NEI$Emissions, NEI$year)#
+year<-c(1999,2002,2005,2008)#
+Q1<-cbind(year,result)#
+Q1<-c("Year","Emissions")#
+png("plot1.png",width=480,height=480)#
+plot(Q1$Year,Q1$Emissions,pch=20, main="Overall Emissions Over Time", xlab="Year", ylab="Emissions")#
+fit<-glm(Q1$Emissions~Q1$Year)#
+ co<-coef(fit)#
+abline(fit,col="blue",lwd=2)#
+dev.off()
+Q1
+Q1<-cbind(year,result)
+names(Q1)<-c("Year","Emissions")
+png("plot1.png",width=480,height=480)#
+plot(Q1$Year,Q1$Emissions,pch=20, main="Overall Emissions Over Time", xlab="Year", ylab="Emissions")#
+fit<-glm(Q1$Emissions~Q1$Year)#
+ co<-coef(fit)#
+abline(fit,col="blue",lwd=2)#
+dev.off()
+Q1
+names(Q1)<-c("Year","Emissions")
+Q1<-cbind(year,result)
+Q1
+names(Q1)<-c("Year","Emissions")
+Q1
+Q1<-cbind(year,result)
+Q1
+plot(Q1,pch=20,main="Overall Emissions Over Time",xlab="Year",ylab="Emissions")
+fit<-glm(Q1$Emissions~Q1$Year)
+Q1<-Q1data.frame(Q1)
+Q1<-data.frame(Q1)
+Q1
+Q1<-cbind(year,result)
+Q1
+Q1<-data.frame(Q1)
+names(Q1)<-c("Year","Emissions")
+Q1
+png("plot1.png",width=480,height=480)
+plot(Q1$Year,Q1$Emissions,pch=20, main="Overall Emissions Over Time", xlab="Year", ylab="Emissions")
+fit<-glm(Q1$Emissions~Q1$Year)
+co<-coef(fit)
+abline(fit,col="blue",lwd=2)
+dev.off()
+Balt<-NEI[which(NEI$fips=="24510"),]#
+result<-rowsum(Balt$Emissions, Balt$year)#
+year<-c(1999,2002,2005,2008)#
+Q2<-cbind(year,result)#
+Q2<-data.frame(Q2)#
+names(Q2)<-c("Year","Emissions")#
+png("plot2.png",width=480,height=480)#
+plot(Q2$Year,Q2$Emissions,pch=20, main="Baltimore Emissions Over Time", xlab="Year", ylab="Emissions")#
+fit<-glm(Q2$Emissions~Q2$Year)#
+ co<-coef(fit)#
+abline(fit,col="blue",lwd=2)#
+dev.off()
+Vehicle<-SCC$SCC[grep("[Vv]ehicle",SCC$EI.Sector)]#
+Vehicle_data<-NEI[NEI$SCC %in% Vehicle,]#
+VB_data<-Vehicle_data[which(Vehicle_data$fips=="24510"),]#
+V_LA_data<-Vehicle_data[which(Vehicle_data$fips=="06037"),]#
+Q6_Raw<-rbind(VB_data,V_LA_data)#
+Q6<-aggregate(Q6_Raw$Emissions ~Q6_Raw$year+Q6_Raw$fips,data=Q6_Raw,FUN="sum")#
+names(Q6)<-c("Year","Location","Emissions")#
+Q6<-as.data.frame(sapply(Q6,gsub,pattern="06037",replacement="Los Angeles"))#
+Q6<-as.data.frame(sapply(Q6,gsub,pattern="24510",replacement="Baltimore"))#
+Q6$Emissions<-as.numeric(as.character(Q6$Emissions))
+Q6
+library(lattice)
+library(datasets)
+xyplot(Q6$Emissions~Q6$Year|Q6$Location)
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=fuction(x,y){panel.xyplot(x,y,...) panel.lmline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.lmline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.lmline()})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) ;panel.lmline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location)
+panel=function(x,y){panel.xyplot(x,y,...) ;panel.lmline(x,y,col=2)}
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) ;panel.abline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.abline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.abline()})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(){panel.xyplot(x,y,...) panel.abline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(){panel.xyplot() panel.abline()})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(){panel.xyplot(x,y,...)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location)
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(Q6$Year,Q6$Emissions){panel.xyplot(Q6$Year,Q6$Emissions) panel.abline(Q6$Year,Q6$Emissions,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.abline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.lmline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y){panel.xyplot(x,y,...) panel.lmline()})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y,...){panel.xyplot(x,y,...) panel.lmline()})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel=function(x,y,...){panel.xyplot(x,y,...) panel.lmline(x,y,col=2)})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, panel = function(x,y, ...) {#
+panel.xyplot(x,y, ...) #
+panel.lmline(x,y,col = 2)#
+})
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, main="Baltimore VS Los Angeles Vehicle Emissions", xlab="Year",ylab="Emissions",panel = function(x,y, ...) {#
+panel.xyplot(x,y, ...) #
+panel.lmline(x,y,col = 2)#
+})
+png("plot6.png",width=480,height=480)#
+xyplot(Q6$Emissions~Q6$Year|Q6$Location, main="Baltimore VS Los Angeles Vehicle Emissions", xlab="Year",ylab="Emissions",panel = function(x,y, ...) {#
+panel.xyplot(x,y, ...) #
+panel.lmline(x,y,col = 2)#
+})#
+dev.off()
